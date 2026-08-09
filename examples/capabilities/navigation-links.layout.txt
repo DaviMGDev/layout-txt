@@ -1,0 +1,24 @@
+# navigation-links — links and navigation rows
+# Links carry the target as an ATTR (opaque, never verified in v1).
+# Cross-screen references use the target FILE STEM by convention:
+# [Settings](link settings) → settings.layout.txt.
+
+(header)
+  [Logo](image logo.svg) [Home](link) [Products](link products) [Pricing](link pricing) [Docs](link docs)
+
+(breadcrumb)
+  [Home](link) [Products](link products) [Details](link product)
+
+(sidebar)
+  [Dashboard](link dashboard)
+  [Analytics](link analytics)
+  [Reports](link reports)
+  [Settings](link settings)
+  [Help](link https://help.example.com)
+
+# Unvalidated in v1: nothing checks that the target stems exist. The
+# filesystem is the index; the glob is the inventory.
+
+(footer)
+  [About](link about) [Careers](link careers) [Legal](link legal)
+  [X](link https://x.com/acme) [GitHub](link https://github.com/acme)

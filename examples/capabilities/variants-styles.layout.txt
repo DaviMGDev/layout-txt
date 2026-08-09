@@ -1,0 +1,22 @@
+# variants-styles — :variant for styles and machine-checked states (G3)
+# The variant is the substring after the FIRST colon of the type token.
+# Use variants for what a verifier should assert; attrs are hints.
+
+# Style variants — the design system maps them to tokens:
+[Primary](button:primary) [Secondary](button:secondary)
+[Ghost](button:ghost) [Danger](button:danger)
+
+# State variants — machine-checkable:
+[Send](button:primary disabled)
+[Save](button:primary loading)
+[Email](input:error placeholder=name@example.com)
+
+# Container variants:
+(card:compact)
+  [Tiny card](text)
+(card:featured)
+  [Big card](text)
+
+# Variant vs attr: `disabled` as an attr is a HINT, not a check; use a
+# variant when the state must be verified. Space-separated variants are
+# not a thing — one variant per type token; more states nest via types.

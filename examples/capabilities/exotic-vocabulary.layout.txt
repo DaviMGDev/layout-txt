@@ -1,0 +1,25 @@
+# exotic-vocabulary — free-form vocabulary (D7)
+# Any widget type is legal, always. Unknown types are INFO, never errors.
+# The 15-type core (text, button, input, link, image, icon, divider,
+# spacer, row, column, grid, card, form, checkbox, select) is a
+# convention; everything else is free-form. Layout leads; the design
+# system catches up.
+
+[Revenue](graph data=monthly)
+[Office](map center=48.85,2.35 zoom=13)
+[Product tour](video src=assets/tour.mp4)
+[Team](avatar group size=lg)
+[Highlights](carousel autoplay interval=5s)
+[Progress](progress value=68)
+[Volume](slider min=0 max=100 value=40)
+[Theme](toggle checked)
+[Status](badge:online)
+[Version](qr value=https://example.com/download)
+[2026 roadmap](timeline)
+  Q1 — checkout v2
+  Q2 — mobile app
+  Q3 — partner API
+  Q4 — payments
+
+# The first-token rule is why new widgets never need a language change:
+# [Anything](whatever attrs...) just works.

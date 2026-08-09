@@ -1,0 +1,29 @@
+# dashboard — admin overview combining rows, exotic widgets, and feeds
+# Stat cards in one row; chart and activity feed side by side via groups.
+
+Good morning, Ada
+Here is what happened while you were away.
+
+(sidebar)
+  [Overview](link overview)
+  [Orders](link orders)
+  [Customers](link customers)
+  [Reports](link reports)
+  [Settings](link settings)
+
+(stats)
+  [Revenue](card) [Orders](card) [Customers](card) [Churn](card)
+
+(main)
+  (row)
+    [Revenue](graph data=quarterly period=2026)
+    (column)
+      [Top product](text)
+      [Ergonomic chair](text)
+      [Conversion](progress value=72)
+  (feed)
+    [Activity](text)
+    [Order #4821 shipped](text)
+    [Refund processed](text)
+    [New review on chair](text)
+    [View all](link feed)

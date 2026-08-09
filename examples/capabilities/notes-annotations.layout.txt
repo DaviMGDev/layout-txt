@@ -1,0 +1,26 @@
+# notes-annotations — # notes (G10)
+# A note attaches to the immediately following widget line (its first item
+# if a row). Stacked notes attach together. Notes before the first widget
+# are screen-level meta. Note indentation is irrelevant. Never verified.
+
+# Screen-level meta lives here, above the first widget:
+# This screen is the settings root; links to profile.layout.txt.
+
+[Settings](text)
+
+# A positional note — it explains the widget directly below it:
+# Password must be 8+ characters; show strength meter per DESIGN.md.
+[Password](input secure placeholder=••••••••)
+
+# Stacked notes attach together:
+# Currency is USD.
+# Prices exclude tax.
+[Total](text:emphasis $128.00)
+
+# Note indentation is irrelevant — this note is indented but still
+# attaches to the following widget:
+  # Even an indented note works.
+[Title](text)
+
+# Notes are the escape hatch: anything the grammar cannot express goes
+# into a note, never into grammar growth.

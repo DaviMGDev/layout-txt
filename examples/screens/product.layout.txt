@@ -1,0 +1,32 @@
+# product — gallery, options, reviews, and a sticky purchase row
+
+(breadcrumb)
+  [Home](link) [Furniture](link furniture) [Chairs](link chairs)
+
+(row)
+  (gallery)
+    (image chair-main.webp)
+    (row)
+      (image chair-1.webp)
+      (image chair-2.webp)
+      (image chair-3.webp)
+  (info)
+    [Ergonomic chair](text)
+    [€249.00](text:emphasis)
+    [In stock](badge:success)
+    [Description](text)
+    Wood frame with mesh back, adjustable height, 5-year warranty.
+    [Color](select)
+      [Oak](option)
+      [Walnut](option)
+      [Black](option)
+    [Quantity](input value=1)
+    [Add to cart](button:primary) [Buy now](button:secondary)
+
+(reviews)
+  [Reviews](text)
+  (review)
+    [Ana](avatar) [5.0](rating) [Solid chair for long hours](text)
+  (review)
+    [Bruno](avatar) [4.0](rating) [Great value, assembly takes an hour](text)
+  [Write a review](link reviews)

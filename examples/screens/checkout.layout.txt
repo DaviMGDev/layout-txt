@@ -1,0 +1,29 @@
+# checkout — steps, address, payment, order summary
+# A form-heavy screen with an exotic steps indicator.
+
+Checkout
+
+(steps)
+  [Cart](step done) [Shipping](step done) [Payment](step active) [Review](step)
+
+(row)
+  (form)
+    [Full name](input name=fullName)
+    [Address](input placeholder="Street, number")
+    [City](input) [Postal code](input)
+    [Country](select)
+      [Germany](option)
+      [Portugal](option)
+    [Card number](input placeholder=•••• •••• •••• ••••)
+    [Expiry](input placeholder=MM/YY) [CVC](input secure)
+    [Pay now](button:primary full-width)
+  (summary)
+    [Order summary](text)
+    (line)
+      [Ergonomic chair](text) [€249.00](text)
+      [Shipping](text) [€12.00](text)
+    (line)
+      [Total](text:emphasis) [€261.00](text:emphasis)
+    [Secure checkout](badge) [Trust badge](badge)
+
+# Payment fields are demo-only; real providers live in the design system.

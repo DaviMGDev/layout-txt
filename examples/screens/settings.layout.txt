@@ -1,0 +1,30 @@
+# settings — sections, toggles, selects, and a sticky save bar
+# Demonstrates :variant state hints and cross-screen navigation.
+
+Settings
+Manage your account preferences.
+
+(sections)
+  (card)
+    [Profile](text)
+    [Name](input value=Ada Lovelace)
+    [Email](input value=ada@example.com)
+    [Save changes](button:primary)
+  (card)
+    [Notifications](text)
+    [Email digests](toggle checked)
+    [Product updates](toggle)
+    [Marketing](toggle)
+  (card)
+    [Appearance](text)
+    [Theme](select)
+      [System](option)
+      [Light](option)
+      [Dark](option)
+    [Language](select)
+      [English](option)
+      [Português](option)
+
+(savebar)
+  [Save](button:primary) [Reset](button:ghost)
+# Settings live in settings.layout.txt — see also profile.layout.txt

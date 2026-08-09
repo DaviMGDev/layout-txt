@@ -1,0 +1,33 @@
+# hierarchy — nesting via indentation (G5, G6)
+# A widget's parent is the most recent preceding widget line with STRICTLY
+# smaller indentation. Children are following lines with STRICTLY greater
+# indentation, until a line with ≤ the parent's. No depth limit.
+
+(card)
+  (header)
+    [Avatar](image avatar.png)
+    (identity)
+      [Name](text)
+      [Handle](text:emphasis)
+  (body)
+    [Post](text)
+    (media)
+      (gallery)
+        (image photo-1.jpg)
+        (image photo-2.jpg)
+        (image photo-3.jpg)
+  (footer)
+    [Like](button) [Share](button) [Comment](button)
+
+# Single-child groups are legal (the media wrapper above has one child):
+(column)
+  (row)
+    [A](button)
+
+# Siblings at any depth; the tree is decided by indentation alone.
+(sidebar)
+  [Home](link)
+  (group)
+    [Settings](link)
+    [Profile](link)
+  [Log out](button:ghost)

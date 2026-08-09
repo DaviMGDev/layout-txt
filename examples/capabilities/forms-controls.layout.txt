@@ -1,0 +1,29 @@
+# forms-controls — form structure (core vocabulary)
+# The field LABEL is the label; placeholder/name/type are attrs. States
+# worth checking go in variants; everything else is a hint.
+
+(form)
+  [Full name](input name=fullName placeholder=Ada Lovelace)
+  [Email](input type=email placeholder=you@example.com)
+  [Password](input secure)
+  [Country](select)
+    [Germany](option)
+    [Portugal](option)
+    [United Kingdom](option)
+  [Newsletter](checkbox checked)
+  # textarea and radio are not in the core yet — exotic, still legal:
+  [Notes](textarea rows=4)
+  (radio)
+    [Weekly](radio) [Monthly](radio)
+
+# Validation states via variants:
+(form)
+  [Email](input:error placeholder=you@example.com)
+  [Confirm](input:success)
+  [Save](button:primary disabled)
+
+# Buttons close the form:
+(form)
+  [Email](input placeholder=you@example.com)
+  [Sign in](button:primary full-width)
+  [Use demo account](button:ghost)

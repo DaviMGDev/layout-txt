@@ -1,0 +1,25 @@
+# profile — header, stats, tabs, and a grid of posts
+
+(cover)
+  (image cover-banner.webp)
+
+(header)
+  [Ada](avatar size=xl online)
+  (identity)
+    [Ada Lovelace](text)
+    [@ada · Lisbon](text)
+    [First computer programmer. Ships things.](text)
+  [Follow](button:primary) [Message](button:secondary)
+
+(stats)
+  [128 posts](card) [4.2k followers](card) [310 following](card)
+
+(tabs)
+  [Posts](tab active) [Replies](tab) [Media](tab) [Likes](tab)
+
+(grid)
+  (post) x3
+    [](image post-1.webp)
+    [Liked by 214 people](text)
+
+# Profile is one screen: profile.layout.txt — stem, not folder, is identity.

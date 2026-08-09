@@ -1,0 +1,28 @@
+# search-results — filters, result cards, pagination
+# Results are written out (varying content — xN never hides differences).
+
+(searchbar)
+  [Search](input placeholder="Search products, brands, categories") [Go](button:primary)
+
+(row)
+  (filters)
+    [Category](select)
+      [All](option)
+      [Chairs](option)
+      [Desks](option)
+    [Price](slider min=0 max=500)
+    [In stock](checkbox checked)
+    [Clear](button:ghost)
+  (results)
+    [42 results for "chair"](text)
+    (result)
+      [](image chair-1.webp)
+      [Nova chair](text) [€189.00](text) [4.7](rating)
+    (result)
+      [](image chair-2.webp)
+      [Arc chair](text) [€249.00](text) [4.9](rating)
+    (result)
+      [](image chair-3.webp)
+      [Fold chair](text) [€99.00](text) [4.2](rating)
+    (pager)
+      [1](link) [2](link) [3](link) [Next](link)

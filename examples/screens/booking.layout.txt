@@ -1,0 +1,40 @@
+# booking — hotel search, room cards, and a summary panel
+# Rooms are written out, not xN'd — each differs in name and price.
+
+Search stays
+Find your next trip.
+
+(searchbar)
+  [Destination](input placeholder=Lisbon) [Check-in](input placeholder=12 Aug) [Check-out](input placeholder=16 Aug)
+  [Search](button:primary)
+
+(row)
+  (rooms)
+    (room)
+      [](image room-1.webp)
+      [Studio — river view](text)
+      [€120 / night](text:emphasis) [4.8](rating)
+      [2 guests · free cancellation](text)
+      [Book](button:primary)
+    (room)
+      [](image room-2.webp)
+      [One-bedroom — city view](text)
+      [€160 / night](text:emphasis) [4.6](rating)
+      [3 guests · breakfast included](text)
+      [Book](button:primary)
+    (room)
+      [](image room-3.webp)
+      [Suite — terrace](text)
+      [€240 / night](text:emphasis) [4.9](rating)
+      [4 guests · parking included](text)
+      [Book](button:primary)
+  (summary)
+    [Your stay](text)
+    [12–16 Aug · 2 guests](text)
+    (line)
+      [4 nights](text) [€480.00](text)
+    (line)
+      [Cleaning fee](text) [€24.00](text)
+    (line)
+      [Total](text:emphasis) [€504.00](text:emphasis)
+    [Reserve](button:primary full-width)

@@ -1,0 +1,20 @@
+# text-widgets — bare lines are text widgets (G2)
+# Headings, captions, and paragraphs are STRUCTURE: presence, order, and
+# label are verified. Type is "text" by convention; the label is the
+# trimmed line.
+
+Welcome to the Acme dashboard
+Your workspace summary for today
+
+# A text widget can also be written explicitly with a type:
+[Explicit text widget](text)
+
+(card)
+  Q3 revenue up 12% quarter over quarter
+  Driven by the new checkout flow and partner program.
+
+# Watch out: a line starting with ( or [ parses as a WIDGET, and a line
+# starting with # is a NOTE — rephrase prose that would collide:
+[In progress — not "(in progress)"](text)
+
+# Text widgets inside groups stack with the rest of the structure.

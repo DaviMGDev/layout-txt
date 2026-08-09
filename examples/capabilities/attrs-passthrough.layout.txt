@@ -1,0 +1,19 @@
+# attrs-passthrough — opaque parameters for the implementer (G3)
+# ATTRS = everything after the type token up to the closing ). Verbatim,
+# never parsed, never verified. URLs, placeholders, data — anything.
+
+# Common attrs:
+[Email](input placeholder=you@example.com autocomplete=email)
+[Docs](link https://example.com/docs)
+[](image cover.webp alt="A cover image")
+
+# Exotic params — the first token is the type, the rest is attrs:
+[Revenue](graph data=monthly period=2026)
+[Map](map center=51.5,-0.12 zoom=12)
+[Video](video src=assets/demo.mp4 autoplay)
+
+# Multiple values inside one attr are fine (they stay opaque):
+[Search](input placeholder="Search by name or email" maxlength=64)
+
+# Rules: no `)` inside attrs (the first ) closes the widget); anything
+# inexpressible goes into a # note instead.

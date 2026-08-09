@@ -1,0 +1,22 @@
+# email-client — folders, message list, reading pane
+# Three-pane layout via a top-level row of containers.
+
+(row)
+  (folders)
+    [Inbox](nav active) [Starred](nav) [Sent](nav) [Drafts](nav) [Archive](nav)
+    [Compose](button:primary)
+  (list)
+    [Search](input placeholder=Search mail)
+    (message)
+      [Nova Shop](text:emphasis) [Your order has shipped](text) [09:12](text)
+    (message)
+      [Bruno](text:emphasis) [Invoice for March](text) [Yesterday](text)
+    (message)
+      [GitHub](text:emphasis) [New stars on your repo](text) [Tue](text)
+  (reading)
+    [Your order has shipped](text)
+    From Nova Shop · 09:12
+    (body)
+      Hi Ada, your order #4821 is on its way. Track it here:
+      [Track order](link https://example.com/track/4821)
+    [Reply](button) [Forward](button) [Archive](button:ghost)

@@ -1,0 +1,20 @@
+# onboarding — wizard with progress, fields, and back/next actions
+
+Set up your workspace
+Step 2 of 4 — team details
+
+(progress)
+  [Account](step done) [Team](step active) [Plan](step) [Done](step)
+
+(form)
+  [Team name](input placeholder=Acme Inc.)
+  [Team size](select)
+    [1-10](option)
+    [11-50](option)
+    [51-200](option)
+  [Invite colleagues](textarea rows=3 placeholder=name@example.com)
+  # Invites are optional — you can do this later from settings.
+  [Skip for now](checkbox)
+
+(actions)
+  [Back](button:ghost) [Continue](button:primary)

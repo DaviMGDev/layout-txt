@@ -1,0 +1,24 @@
+# line-kinds — the four line kinds, disjoint by first character (G2)
+# Every line in LAYOUT.txt is exactly one kind after stripping indentation:
+#   #       → NOTE   (annotation, never a widget)
+#   [ or ( → WIDGET (a widget: leaf or container)
+#   other  → TEXT   (a text widget: type "text" by convention)
+#   blank  → ignored (G1)
+# Notes before the first widget are screen-level meta — like this one.
+
+# A note line. Notes attach to the widget directly below them.
+
+Welcome to LAYOUT.txt
+This bare line is a TEXT widget — a heading or caption.
+
+# A labeled leaf widget:
+[Get started](button:primary)
+# An unlabeled leaf widget (no label, no children):
+(divider)
+# A container widget (group) with indented children:
+(card)
+  [Title](text)
+  [Body](text)
+
+# Blank lines separate groups of lines; they carry no structure (G1).
+# Indentation counts leading spaces only — a tab is a parse error (G1).

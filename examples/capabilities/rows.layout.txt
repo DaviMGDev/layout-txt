@@ -1,0 +1,22 @@
+# rows — same line = side-by-side, separate lines = stacked (G8)
+# Rows are a layout HINT — never verified. (row), (column), (grid) are
+# ordinary container types by convention.
+
+# One physical line = one row, left-to-right:
+[Save](button:primary) [Cancel](button:ghost)
+
+# Separate lines = stacked:
+[Email](input placeholder=you@example.com)
+[Password](input secure)
+
+# A (row) whose children sit on separate lines is STILL a side-by-side row
+# by convention — the type says layout, the lines say structure:
+(row)
+  [Home](link)
+  [About](link)
+  [Contact](link)
+
+# Mixed rows inside a stack:
+(footer)
+  [Privacy](link privacy) [Terms](link terms) [Cookies](link cookies)
+  [© 2026 Acme](text)

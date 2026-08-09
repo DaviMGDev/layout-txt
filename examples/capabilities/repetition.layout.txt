@@ -1,0 +1,21 @@
+# repetition — xN repeats the immediately preceding item (G9)
+# On a leaf it repeats that leaf; on a group line it repeats the whole
+# subtree (children written once). Identical copies ONLY — varying
+# content is written out. x0 is a parse error; x1 is a legal no-op.
+
+# Leaf repetition, mid-line (part of a row):
+[★](icon) x5 [Rate](text)
+
+# Group repetition with a subtree — children written once, indented once:
+(grid cols=3)
+  (card) x6
+    [](image cover.webp)
+    [Title](text)
+    [Buy](button:primary small)
+
+# x1 is a no-op — written for symmetry:
+(spacer) x1
+
+# Repeated row:
+(link-row) x2
+  [Docs](link https://example.com) [Support](link support)

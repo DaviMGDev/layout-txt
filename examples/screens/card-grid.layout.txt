@@ -1,0 +1,16 @@
+# Card grid — LAYOUT v1
+# Meta: column count is a hint for DESIGN.md; cards are listed in reading order.
+
+Browse catalog
+# primary feed — 6 identical compact cards
+(grid cols=3)
+  (card:compact) x6
+    [](image cover.webp)
+    [Title](text) [Price](text:emphasis)
+    [Detail](text two-line clamp)
+    (divider)
+    [★](icon) x5 [Add](button:primary small)
+  (spacer) x1
+(divider)
+(footer)
+  [Privacy](link privacy) [Terms](link terms)

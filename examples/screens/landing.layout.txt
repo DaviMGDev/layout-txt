@@ -1,0 +1,42 @@
+# landing — marketing hero, features, testimonials, CTA, footer
+
+(header)
+  [Logo](image logo.svg) [Product](link product) [Pricing](link pricing) [Docs](link docs) [Sign in](link login)
+
+(hero)
+  [Build screens from plain text](text)
+  [LAYOUT.txt turns a wireframe sketch into structure agents can implement and verify.](text)
+  [Get started](button:primary) [Read the docs](button:ghost)
+
+(logos)
+  [Trusted by teams at](text)
+  (row)
+    [Acme](logo) [Globex](logo) [Initech](logo) [Umbrella](logo)
+
+(features)
+  (feature)
+    [Minutes, not days](text)
+    [A screen structure spec that takes minutes to write and seconds to read.](text)
+  (feature)
+    [Verified structure](text)
+    [Agents check presence, order, hierarchy, labels, and counts.](text)
+  (feature)
+    [No vocabulary lock-in](text)
+    [Any widget type is legal — the design system catches up.](text)
+
+(testimonials)
+  [What teams say](text)
+  (quote)
+    [“We replaced a page of InterSpec with 12 lines of text.”](text)
+    [Ana — Design lead](text)
+  (quote)
+    [“The verifier caught an out-of-order button before we shipped.”](text)
+    [Bruno — Engineer](text)
+
+(cta)
+  [Ready to sketch?](text)
+  [Start writing](button:primary)
+
+(footer)
+  [About](link about) [Careers](link careers) [Legal](link legal)
+  [© 2026 Acme](text)

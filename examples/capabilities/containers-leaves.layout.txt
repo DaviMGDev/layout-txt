@@ -1,0 +1,28 @@
+# containers-leaves — one token, two roles (G5)
+# (type) with indented children = a GROUP. (type) without children = a
+# LABEL-LESS LEAF (the "empty group" is exactly this). The role is
+# decided by children, never by the token.
+
+# Group (has children):
+(card)
+  [Title](text)
+  [Body](text)
+
+# Label-less leaf (no children, no label):
+(image hero.webp)
+(divider)
+(spacer)
+
+# Label-less leaf in bracket form is legal but unidiomatic — prefer parens:
+[](image cover.webp)
+
+# Containers nest freely; an empty-looking group with a note is still a
+# leaf with an explanation:
+# decorative — see DESIGN.md
+(divider)
+
+# Mixed: a group whose children are label-less leaves:
+(gallery)
+  (image photo-1.jpg)
+  (image photo-2.jpg)
+  (image photo-3.jpg)

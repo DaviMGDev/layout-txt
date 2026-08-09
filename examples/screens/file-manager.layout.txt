@@ -1,0 +1,31 @@
+# file-manager — toolbar, breadcrumb, grid, details sidebar
+
+(toolbar)
+  [New](button:primary) [Upload](button) [Share](button) [Delete](button:ghost)
+  [Search](input placeholder=Search files)
+
+(breadcrumb)
+  [Home](link) [Design](link) [Mockups](link)
+
+(row)
+  (grid)
+    (file) x4
+      [](icon folder)
+      [Untitled folder](text)
+    (file)
+      [](icon document)
+      [spec-v1.txt](text)
+    (file)
+      [](icon image)
+      [wireframe.png](text)
+    (file)
+      [](icon document)
+      [notes.md](text)
+  (details)
+    [wireframe.png](text)
+    [PNG image · 2.4 MB](text)
+    [Modified yesterday](text)
+    [Preview](button) [Download](button) [Share](button)
+
+(statusbar)
+  [14 items · 128 MB free](text)
