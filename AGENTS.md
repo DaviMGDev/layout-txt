@@ -79,7 +79,8 @@ or the examples:
   `docs(skills):`, `docs(design):`, `docs(discussions):`, `chore:`.
 - **One commit per coherent change**; include the related design record
   or log updates in the same commit.
-- No remote is configured — commits stay local.
+- **Remote**: `origin` → GitHub (public repo, default branch `main`);
+  push with `git push origin main`, review via GitHub PRs.
 
 ## Notes for AI Agents
 
