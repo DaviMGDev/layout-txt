@@ -1,0 +1,18 @@
+# Login screen — LAYOUT v1
+# Meta: loading/error states are out of scope; annotate here when they matter.
+
+Welcome back
+Please sign in to continue
+
+(form)
+  [Email](input placeholder=you@example.com)
+  [Password](input secure)
+  # the divider separates the fields from the actions
+  (divider)
+  [Remember me](checkbox) [Forgot?](link forgot)
+  [Sign in](button:primary full-width)
+  [Create account](button:secondary) [Use demo](button:ghost)
+# footer links are deliberately outside the form
+(divider)
+(link-row) x2
+  [Docs](link https://example.com) [Help (FAQ)](link faq)

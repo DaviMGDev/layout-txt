@@ -1,0 +1,15 @@
+# Company site — LAYOUT v1
+# All pages share this shell; per-page content lives in the content layer.
+
+(header)
+  [Logo](image logo.svg) [Home](link) [About](link) [Contact](link)
+(hero)
+  [Headline](text)
+  [Subhead](text)
+  [Get started](button:primary) [Learn more](button:ghost)
+(sections)
+  (card) x3
+    [Title](text)
+    [Body](text)
+(footer)
+  [Privacy](link privacy) [Terms](link terms)
